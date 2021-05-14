@@ -33,6 +33,11 @@ public class Produto {
 		this.pedido = pedido;
 		this.preco = preco;
 	}
+	
+	public Produto() {
+
+	}
+
 
 	public Long getId() {
 		return id;

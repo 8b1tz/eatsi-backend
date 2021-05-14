@@ -38,6 +38,11 @@ public class Pedido {
 		this.status = status;
 		this.usuario = usuario;
 	}
+	
+	public Pedido() {
+
+	}
+
 
 	public Long getId() {
 		return id;

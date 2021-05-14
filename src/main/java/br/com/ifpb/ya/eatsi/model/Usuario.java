@@ -30,6 +30,10 @@ public class Usuario {
 		this.senha = senha;
 		this.telefone = telefone;
 	}
+	
+	public Usuario() {
+	}
+	
 	public Long getId() {
 		return id;
 	}

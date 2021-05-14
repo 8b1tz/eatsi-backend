@@ -11,6 +11,11 @@ public class Endereco {
 		this.cep = cep;
 		this.numero_do_local = numero_do_local;
 	}
+	
+	public Endereco() {
+
+	}
+	
 	public String getCep() {
 		return cep;
 	}

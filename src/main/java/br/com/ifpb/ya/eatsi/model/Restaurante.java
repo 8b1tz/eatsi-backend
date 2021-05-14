@@ -39,6 +39,10 @@ public class Restaurante {
 		this.endereco = new Endereco(cpf, numero_do_local);
 
 	}
+	
+	public Restaurante() {
+
+	}
 
 	public Long getId() {
 		return id;
