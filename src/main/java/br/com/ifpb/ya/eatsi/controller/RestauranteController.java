@@ -9,10 +9,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import br.com.ifpb.ya.eatsi.model.Restaurante;
 import br.com.ifpb.ya.eatsi.service.RestauranteService;
 
+@RestController
+@RequestMapping("/")
 public class RestauranteController {
 	@Autowired
 	   private RestauranteService restauranteService;
@@ -21,6 +25,7 @@ public class RestauranteController {
 	   public List<Restaurante> getRestaurantes() {
 	       return this.restauranteService.getRestaurantes();
 	   }
+
 
 	   @GetMapping("/restaurantes/{id}")
 	   public Restaurante getRestaurantePorId(@PathVariable("id") Long idRestaurante) {

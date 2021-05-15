@@ -2,10 +2,12 @@ package br.com.ifpb.ya.eatsi.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -18,6 +20,8 @@ public class Usuario {
 	private Long id;
 	private String nome;
 	private String email;
+	@ManyToMany(mappedBy = "usuarios")
+	private List<Endereco> enderecos;
 	private String senha;
 	private String telefone;
 	@OneToMany(mappedBy = "usuario")

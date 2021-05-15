@@ -1,5 +1,7 @@
 package br.com.ifpb.ya.eatsi;
 
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.support.ErrorPageFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -16,4 +18,5 @@ public class AppConfig {
 			}
 		};
 	}
+	
 }
